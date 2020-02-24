@@ -10,7 +10,6 @@ import numpy as np
 import datetime
 
 from pages import (
-    downtime,
     uptime,
     rate,
     fpfq,
@@ -112,7 +111,6 @@ def display_page(pathname):
         return opportunity.create_layout(app)
     elif pathname == "/featherstone/opportunity":
         return (
-            downtime.create_layout(app),
             rate.create_layout(app),
             uptime.create_layout(app),
             fpfq.create_layout(app),
