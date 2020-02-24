@@ -15,7 +15,7 @@ import dash_html_components as html
 import json
 from textwrap import dedent as d
 
-from app import app
+#from app import app
 
 master = pd.read_csv('assets/downtimes.csv', low_memory=False)
 master["Accountable From Date"] = pd.to_datetime(master["Accountable From Date"])
