@@ -2,6 +2,7 @@
 import dash
 import json
 import dash_core_components as dcc
+import dash_bootstrap_components as dbc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
@@ -92,7 +93,12 @@ app.layout = html.Div([
                 dcc.Graph(id='opportunity_bar_plot'),
                 dcc.Graph(id='opportunity_user_plot'),
 
+
+
+                ### Animate Objects
+                dcc.Graph(id='animate_opportunity'),
                 html.Pre(id='hover-data', style={'margin-top': '25px'})
+
         ],style={'display': 'none'})
         ])
 
