@@ -90,11 +90,11 @@ body {
   margin-top: 30px;
 }
 #subtitle {
-  text-align: center;
+  text-align: left;
 }
 
 #title {
-  text-align: center;
+  text-align: left;
 }
 
 .mini_container {
@@ -111,23 +111,15 @@ body {
   flex-direction: column;
 }
 
-#wells {
+#control1 {
   flex: 1;
 }
 
-#gas {
+#control2 {
   flex: 1;
 }
 
-#aggregate_data {
-  align-items: center;
-}
-
-#oil {
-  flex: 1;
-}
-
-#water {
+#control3 {
   flex: 1;
 }
 
