@@ -336,7 +336,7 @@ app.layout = html.Div([
     html.Div([
         html.Div([
             html.Div([
-                html.H3(
+                html.H4(
                     "Asset Capability",
                     style={"margin-bottom": "0px"},
                         ),
