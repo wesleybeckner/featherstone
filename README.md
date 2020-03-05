@@ -37,7 +37,9 @@ python app.py
 
 ## About the app
 
-This is an interactive app to assess asset capability for manufacturing
+This is an interactive app to assess asset capability for manufacturing plants. 
+
+There is hidden capability within plant assets due to variability in their uptimes, yields, and rates. By assessing these variabilities with regard to unique products and operators, the hidden capabilities can be evaluated and monetized for each asset. Setting the "Performance Quantile" recenters these performance distributions to the selelcted quantile and computes the resulting production opportunity. The underlying contributors to the distributions can be investigated by selecting the line, metric, and pareto options in the bottom plots. 
 
 
 ## Built With
