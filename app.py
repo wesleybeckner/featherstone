@@ -21,19 +21,19 @@ app = dash.Dash(
 )
 server = app.server
 
-oee = pd.read_csv('assets/oee.csv', low_memory=False)
+oee = pd.read_csv('data/oee.csv', low_memory=False)
 oee["To Date/Time"] = pd.to_datetime(oee["To Date/Time"])
 oee["From Date/Time"] = pd.to_datetime(oee["From Date/Time"])
 oee["Scheduled Time"] = pd.to_timedelta(oee["Scheduled Time"])
 oee["Run Time"] = pd.to_timedelta(oee["Run Time"])
 metric_cols = ["Rate", "Yield", "Uptime", "Utilization"]
 
-master = pd.read_csv('assets/downtimes.csv', low_memory=False)
+master = pd.read_csv('data/downtimes.csv', low_memory=False)
 master["From Date/Time"] = pd.to_datetime(master["From Date/Time"])
 master["To Date/Time"] = pd.to_datetime(master["To Date/Time"])
 
-opp = pd.read_csv('assets/opportunity.csv', index_col=[0,1,2,3])
-annual_operating = pd.read_csv('assets/annual.csv')
+opp = pd.read_csv('data/opportunity.csv', index_col=[0,1,2,3])
+annual_operating = pd.read_csv('data/annual.csv')
 quantiles = np.arange(50,96,1)
 quantiles = quantiles*.01
 quantiles = np.round(quantiles, decimals=2)
