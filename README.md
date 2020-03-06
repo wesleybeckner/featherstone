@@ -2,7 +2,7 @@
 
 # Asset Capability Dashboard
 
-This is an energy dashboard demo using [Dash](https://plot.ly/products/dash/) 
+This is an [energy dashboard](https://belpre.herokuapp.com) demo using [Dash](https://plot.ly/products/dash/)
 
 ## Getting Started
 
@@ -37,9 +37,9 @@ python app.py
 
 ## About the app
 
-This is an interactive app to assess asset capability for manufacturing plants. 
+This is an interactive app to assess asset capability for manufacturing plants.
 
-There is hidden capability within plant assets due to variability in their uptimes, yields, and rates. By assessing these variabilities with regard to unique products and operators, the hidden capabilities can be evaluated and monetized for each asset. Setting the "Performance Quantile" recenters these performance distributions to the selelcted quantile and computes the resulting production opportunity. The underlying contributors to the distributions can be investigated by selecting the line, metric, and pareto options in the bottom plots. 
+There is hidden capability within plant assets due to variability in uptime, yield, and rate. By assessing these variabilities with regard to unique products and operators, the hidden capabilities can be evaluated and monetized for each asset. Setting the "Performance Quantile" re-centers these performance distributions to the selected quantile and computes the resulting production opportunity. Operator/product/downtime events that poorly impact performance can be investigated within the dashboard. 
 
 
 ## Built With
