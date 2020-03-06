@@ -439,6 +439,21 @@ app.layout = html.Div([
         ],
         className='row flex-display',
         ),
+    html.Div([
+        html.H6(["Background"]),
+        dcc.Markdown('''
+            There is hidden capability within plant assets due to variability
+            in uptime, yield, and rate. By assessing these variabilities with
+            regard to unique products and operators, the hidden capabilities
+            can be evaluated and monetized for each asset. Setting the
+            "Performance Quantile" re-centers these performance distributions
+            to the selected quantile and computes the resulting production
+            opportunity. Operator/product/downtime events that poorly impact
+            performance can be investigated within the dashboard.
+        ''')
+        ],
+        className='mini_container',
+        ),
     ],
     className='pretty container'
     )
