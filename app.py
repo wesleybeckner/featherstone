@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# WWW-*- coding: utf-8 -*-
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -453,7 +453,8 @@ app.layout = html.Div([
     Input('bar_plot', 'clickData')]
 )
 def display_hover_data(groupby, year, metric, distClickData, barClickData):
-    return make_performance_plot(groupby, year, metric, distClickData, barClickData)
+    return make_performance_plot(groupby, year, metric, distClickData,
+        barClickData)
 @app.callback(
     Output('dist_plot', 'figure'),
     [Input('pareto_dropdown', 'value'),
